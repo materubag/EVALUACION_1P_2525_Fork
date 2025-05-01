@@ -3,8 +3,8 @@
 ### Carrera de Ingeniería en Software  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Mateo Rubio 
+**Fecha:** 30/04/2025 
 
 ---
 
@@ -24,7 +24,9 @@
 **Explicar la diferencia entre los siguientes conceptos/comandos en Git y GitHub:**
 
 - `git clone`  
+
 - `fork`  
+
 - `git pull`
 
 ### Parte práctica:
@@ -33,13 +35,29 @@
 - Luego, realizar un **clone** del fork en el equipo local.
 - En este README, describir el proceso seguido:
   - ¿Cómo se realizó el fork?
+
   - ¿Cómo se realizó el clone del fork?
-  - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+
+  - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?\
 
 **📝 Respuesta:**
+- `git clone`  
+   clona el repositorio de la url que se ingresa
+- `fork`  
+   se clona un repositorio de otra persona en mi repositorio de github
+- `git pull`
+   se traen los cambios actuale de github del origen o origin actual
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+  - ¿Cómo se realizó el fork?
+    en la parte del codigo del repositorio se presiona fork, esto abre una ventana para crear la copia del proyecto en mi repositorio
+  ![alt text](<Screenshot 2025-04-30 182537.png>)
 
+  - ¿Cómo se realizó el clone del fork?
+  se ingresa a git Bash y se ingresa el sigiente comando: $ git clone https://github.com/materubag/EVALUACION_1P_2525_Fork.git
+
+  - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+  porque la url es diferente a la del repositorio original, tiene mi nombre y fork al final.
+  ![alt text](<Screenshot 2025-04-30 182639.png>)
 ---
 
 ## Pregunta 2 (1 punto)
@@ -58,8 +76,15 @@
 - Solo el **segundo commit** debe llevar el **tag `"Pregunta 2"`**.
 
 **📝 Respuesta:**
-
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+- primer commit
+![alt text](image.png)
+- Funcionalidad de .gitignore
+el .gitignore hace que los archivos o carpetas especificadas dentro de el no sean rastreadas por git
+- Evidencia
+los archivos no aparecen con git status
+![alt text](image-1.png)
+segundo commit
+![alt text](image-2.png)
 
 ---
 
@@ -89,7 +114,26 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+- Comandos de git flow
+git flow init
+git flow feature start ingresar-encabezado
+git add .
+git commit
+git add .
+git commit
+git add .
+git commit
+git tag -a Pregunta3 -m "Pregunta3"
+git flow feature finish ingresar-encabezado
+- Proceso
+se ingresa git flow init
+presiono enter con los ajustes por defecto
+creo la feature con git flow feature start ingresar-encabezado
+hago un cambio y el primer commit con el nombre
+hago un segundo commit con la fecha
+hago un commit final con la respuesta
+agrego un tag al ultimo commit
+cierro la feature con git flow feature finish ingresar-encabezado
 
 ---
 
@@ -121,9 +165,28 @@
 - Una explicación de cómo se comprobó que el repositorio requería revisión antes de aceptar el pull request (por ejemplo, a través del mensaje mostrado por GitHub).
 
 **📝 Respuesta:**
+- Preguntas
+-Que es una issue?
+es una tarea que se puede asignar a un colaborador de un repositorio de github
+-Que es un pull requiest?
+es una peticion de revision de un merge entre 2 ramas
+-Diferencias
+el issue no modifica nada del repositorio, mientras que el PR hace un merge
+- Resumen del procedimiento realizado.
+se creo la issue en github
+se respondio a las preguntas
+se hizo un commit
+se hizo un push al repositorio remoto
+se hizo una PR de developa develop
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
-
+- El número del issue creado.
+el #4
+- El enlace al pull request.
+https://github.com/materubag/EVALUACION_1P_2525_Fork/pull/1
+- Explicación 
+se debe agregar una regla para evitar merge directo a main
+![alt text](image-4.png)
+![alt text](image-3.png)
 ---
 
 ## Pregunta 5 (2 puntos)
